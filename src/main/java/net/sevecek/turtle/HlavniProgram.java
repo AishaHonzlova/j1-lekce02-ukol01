@@ -209,9 +209,6 @@ public class HlavniProgram {
         zofka.penDown();
         zofka.move(1100);
         zofka.penUp();
-    }
-
-    private void napisJmeno(Turtle zofka) {
 
         zofka.turnRight(180);
         zofka.setPenWidth(6);
@@ -219,7 +216,9 @@ public class HlavniProgram {
         zofka.move(900);
         zofka.turnLeft(90);
         zofka.move(550);
+    }
 
+    private void napisPismenoA(Turtle zofka) {
 // Pismeno A
         zofka.penDown();
         zofka.turnRight(25);
@@ -233,7 +232,9 @@ public class HlavniProgram {
         zofka.turnRight(180);
         zofka.penUp();
         zofka.move(55);
+    }
 
+    private void napisPismenoI(Turtle zofka) {
 //Pismeno I
         zofka.penDown();
         zofka.turnLeft(90);
@@ -244,7 +245,9 @@ public class HlavniProgram {
         zofka.move(35);
         zofka.turnRight(90);
         zofka.penUp();
+        }
 
+    private void napisPismenoS(Turtle zofka) {
 //Pismeno S
         zofka.move(35);
         zofka.turnLeft(145);
@@ -276,7 +279,7 @@ public class HlavniProgram {
         zofka.move(4);
         zofka.turnRight(15);
 
-    zofka.turnRight(160);
+        zofka.turnRight(160);
 
         zofka.penUp();
         zofka.move(4);
@@ -339,11 +342,13 @@ public class HlavniProgram {
         zofka.turnRight(15);
         zofka.move(5);
         zofka.turnRight(15);
+    }
 
+    private void napisPismenoH(Turtle zofka) {
 //Pismeno H
         zofka.penUp();
         zofka.turnRight(105);
-        zofka.move (45);
+        zofka.move(45);
         zofka.penDown();
         zofka.turnLeft(90);
         zofka.move(60);
@@ -365,20 +370,6 @@ public class HlavniProgram {
         zofka.turnRight(90);
         zofka.move(20);
         zofka.turnLeft(93);
-
-//Pismeno A
-        zofka.penDown();
-        zofka.turnRight(25);
-        zofka.move(70);
-        zofka.turnRight(130);
-        zofka.move(70);
-        zofka.turnRight(180);
-        zofka.move(35);
-        zofka.turnLeft(64);
-        zofka.move(25);
-        zofka.turnRight(180);
-        zofka.penUp();
-        zofka.move(55);
     }
 
     public void main(String[] args) {
@@ -393,7 +384,11 @@ public class HlavniProgram {
         posunSeDolu2(zofka);
         nakresliDomecky(zofka);
         nakresliTravu(zofka);
-        napisJmeno(zofka);
+        napisPismenoA(zofka);
+        napisPismenoI(zofka);
+        napisPismenoS(zofka);
+        napisPismenoH(zofka);
+        napisPismenoA(zofka);
 
 
     }
